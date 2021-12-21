@@ -1,17 +1,26 @@
 <template>
+  
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div id="nav-wrapper">
+      <router-link to="/window">Search for a window</router-link>
+      <router-link to="/allWindows">See all windows</router-link>
+    </div>
+    <router-view/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+//import ToDoItem from './components/ToDoItem.vue';
+
+
+
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    //ToDoItem
+    //Window
   }
 }
 </script>
